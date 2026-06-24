@@ -1,0 +1,33 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║        🧊 ICEBERG CALVING DETECTION — FINAL RESULTS 🧊          ║
+╠══════════════════════════════════════════════════════════════════╣
+║  INPUT DATA    : Sentinel-1 SAR (ESA Copernicus, Jan 2020)      ║
+║  MODELS TESTED : CNN Baseline | U-Net | U-Net+Attention |ProtoNet║
+╠══════════════════════════════════════════════════════════════════╣
+║  MODEL COMPARISON                                               ║
+║  CNN Baseline      → AUC: 0.564   (Weakest)                 ║
+║  U-Net             → AUC: 0.927                            ║
+║  U-Net + Attention → AUC: 0.945                            ║
+║  ProtoNet ⭐       → AUC: 0.994   (BEST)                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  BEST MODEL    : ProtoNet (Few-Shot Learning)                   ║
+║  Accuracy      :  96.9%                                         ║
+║  Precision     :  38.6%                                         ║
+║  Recall        :  99.8%  ← Detects 99.6% of cracks          ║
+║  F1 Score      :  55.6%                                         ║
+║  AUC Score     : 0.994  ← Near perfect discrimination          ║
+╠══════════════════════════════════════════════════════════════════╣
+║  TEMPORAL ANALYSIS (CORE INNOVATION)                            ║
+║  T1 Crack Area : 1267 pixels                                   ║
+║  T2 Crack Area : 3984 pixels                                   ║
+║  Growth Rate   : +214.4%                                       ║
+║  RISK LEVEL    : 🔴 HIGH RISK — Calving Likely!                   ║
+╠══════════════════════════════════════════════════════════════════╣
+║  OUTPUT FILES SAVED TO:                                         ║
+║  C:\Users\OK COMPUTER\Downloads\iceberg_demo_results           ║
+║  demo1_preprocessing.png    demo5_training_curves.png           ║
+║  demo2_annotation.png       demo6_roc_curves.png                ║
+║  demo3_augmentation.png     demo6_confusion_matrices.png        ║
+║  demo7_temporal_analysis.png demo6_predicted_masks.png          ║
+╚══════════════════════════════════════════════════════════════════╝
